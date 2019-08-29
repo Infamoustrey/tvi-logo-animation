@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapper img {
+  max-height: 40px;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper div {
+  display: inline-block;
+}
+
+.divider {
+  opacity: 0;
+  animation: fadein 300ms linear 2s;
+  animation-fill-mode: forwards;
+}
+
+.slide-to-right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  animation: slideright 1s ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.slide-to-left {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  animation: slideleft 1s ease-in 1s;
+  padding: 0;
+  animation-fill-mode: forwards;
+}
+
+.campaign {
+  height: 60px;
+  margin-top: 0.5em;
+  animation: fadein 2s;
+}
+
+@keyframes slideleft {
+  from {
+    right: 0;
+  }
+  to {
+    right: 280px;
+  }
+}
+
+@keyframes slideright {
+  from {
+    left: 0;
+  }
+  to {
+    left: 53px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
